@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_back"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+        <Spinner
+            android:id="@+id/bloodgroupselect_sp_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:entries="@array/blood_group"
+            android:prompt="@string/choose_blood"
+            android:spinnerMode="dropdown"
+            android:transitionGroup="true"
+            android:scrollbarSize="10dp"
+            />
+
+
+
+            <Spinner
+                android:id="@+id/spinner_address_et"
+                android:layout_width="50dp"
+                android:layout_weight="60"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:entries="@array/district"
+                android:prompt="@string/choose_district"
+                android:spinnerMode="dropdown"
+                android:drawableLeft="@drawable/ic_action_spinner_location"
+
+                android:transitionGroup="true" />
+
+
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnsearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:text="Search Blood"
+            android:background="@drawable/rounded_button" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/top_list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</LinearLayout>

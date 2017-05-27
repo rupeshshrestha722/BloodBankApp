@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_back"
+    android:weightSum="1">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blood Request"
+            android:textSize="21dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <EditText
+            android:id="@+id/fragment_blood_request_edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:drawableLeft="@drawable/use"
+            android:textColorHint="@color/mid_black"
+            android:textSize="16sp"
+            android:background="@color/btnBg"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/btnBg"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Your Blood Group"
+                android:textColor="#000000"
+                />
+            <Spinner
+                android:id="@+id/fragment_blood_request_edit_text_bloodgroupselect_sp_et"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:entries="@array/blood_group"
+                android:prompt="@string/choose_blood"
+                android:spinnerMode="dropdown"
+                android:transitionGroup="true" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/btnBg"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Choose District"
+                android:textColor="#000000"
+                />
+            <Spinner
+                android:id="@+id/fragment_blood_request_spinner_district"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:entries="@array/district"
+                android:prompt="@string/choose_district"
+                android:spinnerMode="dropdown"
+
+                android:transitionGroup="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="100"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/btnBg"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:text="Choose Blood Quantity"
+                android:textColor="#000000"
+                />
+            <Spinner
+                android:id="@+id/fragment_blood_request_spinner_quantity"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:entries="@array/quantity"
+                android:prompt="@string/choose_quantity"
+                android:spinnerMode="dropdown"
+
+                android:transitionGroup="true" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/fragment_blood_request_edit_text_contact_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact No"
+            android:drawableLeft="@drawable/phone"
+            android:textAlignment="center"
+            android:textColorHint="@color/mid_black"
+            android:textSize="16sp"
+            android:background="@color/btnBg"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="10dp"
+
+            />
+
+
+
+
+
+        <Button
+            android:id="@+id/fragment_blood_request_request_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Request"
+            android:background="@drawable/rounded_button"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

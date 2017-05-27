@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/AddDonor"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Add Donor" />
+        <item
+            android:id="@+id/donorList"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Donor List" />
+        <item
+            android:id="@+id/createEvent"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Create Event" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile_overview"
+            android:title="Profile" />
+        <item
+            android:id="@+id/appinfo"
+            android:icon="@drawable/ic_logout"
+            android:title="About App" />
+        <item
+            android:id="@+id/health_tips"
+            android:icon="@drawable/ic_logout"
+            android:title="Health Tips" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
